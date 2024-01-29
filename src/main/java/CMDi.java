@@ -85,7 +85,7 @@ public class BenchmarkTest00981 extends HttpServlet {
         Runtime r = Runtime.getRuntime();
 
         try {
-            Process p = r.exec(args, argsEnv, new java.io.File(System.getProperty("user.dir")));
+            Process p = r.exec(args, argsEnv, new java.io.File(System.getProperty("user.dir")));  
             p.waitFor();
             response.getWriter().println("ok");
         } catch (Exception e) {
